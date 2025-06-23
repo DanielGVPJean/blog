@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel González Viera - Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Daniel GV</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Daniel González Viera Petit-Jean</h1>
+            <h2>Software Engineer & Technical Lead</h2>
+            <p>Especializado en arquitecturas full-stack, DevOps y sistemas IoT</p>
+            <a href="#blog" class="cta-button">Explorar Blog</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy un Software Engineer con más de 4 años de experiencia desarrollando soluciones tecnológicas innovadoras. Actualmente trabajo como Senior Software Engineer y Technical Lead en Cautiva Producciones, donde lidero equipos multidisciplinarios y arquitecto sistemas complejos.</p>
+                    <p>Mi experiencia abarca desde el desarrollo de aplicaciones web full-stack hasta la implementación de sistemas IoT y arquitecturas offline-first. He tenido la oportunidad de trabajar en proyectos internacionales, incluyendo una experiencia de mentoría en MIT.</p>
+                    <div class="skills">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">DevOps</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-grid">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <div class="post-image" data-image="cautiva">
+                        <span class="image-placeholder">🏗️ Arquitectura Offline-First</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Mi Experiencia como Technical Lead en Cautiva Producciones</h3>
+                        <p class="post-meta">Diciembre 2024 • Liderazgo Técnico</p>
+                        <p class="post-excerpt">Como Technical Lead en Cautiva Producciones, he tenido la oportunidad de pionear una arquitectura offline-first que revolucionó nuestros paneles de usuario...</p>
+                        <div class="post-full" style="display: none;">
+                            <p>Desde agosto de 2024, lidero un equipo multidisciplinario de 6 personas en Cautiva Producciones, donde hemos implementado soluciones tecnológicas que han transformado la experiencia del usuario.</p>
+                            
+                            <h4>Arquitectura Offline-First</h4>
+                            <p>Uno de mis logros más significativos fue el desarrollo de una arquitectura offline-first utilizando IndexedDB. Esta implementación redujo los tiempos de carga inicial en más de 10 segundos y logró una reducción del 99% en incidentes relacionados con conectividad.</p>
+                            
+                            <h4>Sistema de Autenticación Microservicio</h4>
+                            <p>Arquitecté y lideré el desarrollo de un sistema de autenticación standalone utilizando Clerk para autenticación segura y Laravel para gestión de sesiones y permisos. Este sistema consolidó el control de acceso en todas las plataformas de la empresa, reduciendo los reportes de bugs relacionados con autenticación en un 85%.</p>
+                            
+                            <h4>CI/CD y Blue-Green Deployment</h4>
+                            <p>Implementé pipelines robustos de CI/CD en GitHub Actions, creando un sistema de blue-green deployment para servicios frontend y backend. Esto redujo los errores de deployment inducidos por usuarios en un 90% y aumentó significativamente la velocidad de portabilidad.</p>
+                            
+                            <h4>Sistema de Gestión de Pagos</h4>
+                            <p>Diseñé e implementé un sistema completo de gestión de pagos integrando la API de Stripe y webhooks para orquestar todos los eventos relacionados con pagos. El sistema incluye alertas en tiempo real, generación dinámica de códigos de cupón y un carrito de compras unificado.</p>
+                        </div>
+                        <button class="read-more-btn" onclick="togglePost(this)">Leer más</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <div class="post-image" data-image="iot">
+                        <span class="image-placeholder">🌱 Sistemas IoT Educativos</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Desarrollando Sistemas IoT en el Sector Educativo</h3>
+                        <p class="post-meta">Agosto 2024 • IoT & Analytics</p>
+                        <p class="post-excerpt">Durante mi tiempo en Colegio Las Hayas, desarrollé múltiples sistemas IoT que transformaron la gestión de recursos y el análisis de datos en el campus...</p>
+                        <div class="post-full" style="display: none;">
+                            <p>En Colegio Las Hayas tuve la oportunidad de trabajar en proyectos innovadores que combinaron IoT, análisis de datos y desarrollo web para crear soluciones educativas únicas.</p>
+                            
+                            <h4>Servicio de Análisis de Datos de Invernadero</h4>
+                            <p>Construí un backend basado en Python que ingiere feeds de sensores de invernaderos inteligentes, aplica pipelines eficientes de clasificación/indexación, y ejecuta un modelo de Regresión Lineal para predecir tendencias de pH. El sistema expone endpoints REST tanto para consultas en tiempo real como para pronósticos por lotes programados.</p>
+                            
+                            <h4>Plataforma de Monitoreo de Consumo de Recursos</h4>
+                            <p>Desarrollé un conjunto de agentes en C++ para consultar APIs de medidores inteligentes de agua, gas y electricidad, transmitiendo datos a una API central de Laravel. En el frontend, implementé un dashboard de React con actualizaciones WebSocket para visualización en vivo del consumo por hogar y alertas personalizables.</p>
+                            
+                            <h4>Sistema de Préstamo de Activos con RFID</h4>
+                            <p>Diseñé firmware de microcontrolador en C++ para manejar flujos de check-in/check-out RFID. Creé un backend RESTful en PHP/MySQL para persistir registros de préstamos y construí una aplicación de página única en React para que los administradores gestionen inventario y generen reportes de uso en kioscos del campus.</p>
+                            
+                            <h4>Módulo de Calificación Offline-First</h4>
+                            <p>Contribuí al backend de Laravel que alimenta la puntuación en vivo, integrando Clerk para autenticación segura. En el frontend de React, implementé un caché offline basado en IndexedDB con lógica de sincronización automática para garantizar consistencia de datos bajo conectividad intermitente.</p>
+                        </div>
+                        <button class="read-more-btn" onclick="togglePost(this)">Leer más</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post">
+                    <div class="post-image" data-image="mit">
+                        <span class="image-placeholder">🎓 Experiencia Internacional</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Mi Paso por MIT y el Mundo del E-Commerce</h3>
+                        <p class="post-meta">Agosto 2023 • Experiencia Internacional</p>
+                        <p class="post-excerpt">Mi experiencia internacional me ha llevado desde mentorizar estudiantes en MIT hasta desarrollar plataformas de e-commerce innovadoras...</p>
+                        <div class="post-full" style="display: none;">
+                            <p>Las experiencias internacionales han sido fundamentales en mi crecimiento profesional, desde la mentoría académica hasta el desarrollo de soluciones comerciales innovadoras.</p>
+                            
+                            <h4>Mentoría en MIT Research Science Institute</h4>
+                            <p>En el verano de 2017, tuve el privilegio de participar como mentor estudiantil en el MIT Research Science Institute. Guié a dos estudiantes pre-universitarios a través de sus proyectos de investigación fuera del campus, enseñándoles conceptos fundamentales de lógica de programación y asistiendo en el diseño y fabricación de prototipos de electrónicos vestibles.</p>
+                            
+                            <p>Lideré a los estudiantes en la construcción de interfaces JavaScript y HTML para mostrar su investigación y prototipos, culminando en un portafolio online pulido que destacaba sus habilidades técnicas y resultados de proyectos.</p>
+                            
+                            <h4>Plataforma de E-Commerce de Impresión 3D</h4>
+                            <p>En 3D-POP, arquitecté y construí la tienda online de la empresa utilizando JavaScript, jQuery, HTML5 y CSS3, permitiendo a los clientes navegar, configurar y enviar trabajos de impresión 3D directamente desde su navegador.</p>
+                            
+                            <h4>Sistema de Gestión de Pedidos Online</h4>
+                            <p>Desarrollé un backend robusto en PHP/MySQL para manejar colocación de pedidos, seguimiento de estado y actualizaciones de inventario, optimizando el flujo de trabajo desde envío hasta producción.</p>
+                            
+                            <h4>Calculadora de Costos de Manufactura</h4>
+                            <p>Creé un módulo dinámico de estimación de costos en JavaScript que factoriza material, tiempo de impresión y opciones de acabado, integrado en el formulario de pedidos para dar a los clientes cotizaciones en tiempo real.</p>
+                            
+                            <h4>Lecciones Aprendidas</h4>
+                            <p>Estas experiencias me enseñaron la importancia de la comunicación intercultural, la adaptabilidad tecnológica y cómo diferentes mercados requieren enfoques únicos en el desarrollo de software. La combinación de mentoría académica y desarrollo comercial me ha dado una perspectiva única sobre cómo la tecnología puede impactar tanto en la educación como en los negocios.</p>
+                        </div>
+                        <button class="read-more-btn" onclick="togglePost(this)">Leer más</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>danielgvpj@outlook.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Teléfono</h4>
+                    <p>(+52) 228 777 4859</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Website</h4>
+                    <p><a href="https://danielgv.com/" target="_blank">danielgv.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>LinkedIn</h4>
+                    <p><a href="https://linkedin.com/in/danielgvpj/" target="_blank">linkedin.com/in/danielgvpj</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Daniel González Viera Petit-Jean. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Toggle blog post content
+        function togglePost(button) {
+            const post = button.closest('.blog-post');
+            const fullContent = post.querySelector('.post-full');
+            const isExpanded = fullContent.style.display === 'block';
+            
+            if (isExpanded) {
+                fullContent.style.display = 'none';
+                button.textContent = 'Leer más';
+            } else {
+                fullContent.style.display = 'block';
+                button.textContent = 'Leer menos';
+            }
+        }
+
+        // Add active class to navigation on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop <= 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
